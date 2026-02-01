@@ -4,7 +4,7 @@
 <th style="text-align:center"><img src="icon-is.png" alt="IS" width="20"> Information-Security</th>
 <th style="text-align:center"><img src="icon-ml.png" alt="ML" width="20"> Machine-Learning</th>
 <th style="text-align:center"><img src="icon-bc.png" alt="BC" width="20"> Blockchain-Stuff</th>
-<th style="text-align:center"><img src="icon-ot.png" alt="OT" width="20"> Other-Stuff</th>
+<th style="text-align:center"><img src="icon-ot.png" alt="OT" width="20"> Other-Software-Stuff</th>
 </tr>
 <tr>
 <td style="text-align:center"><a href="https://github.com/st-mn/autodr">autodr</a></td>
