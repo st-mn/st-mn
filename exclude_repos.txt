@@ -28,3 +28,4 @@ oai-automation
 ml-sp500-prediction
 demo-microsaas
 django-example
+st-mn
