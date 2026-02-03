@@ -11,9 +11,13 @@ function getRepos() {
         
         while (hasMore) {
             const url = `https://api.github.com/users/st-mn/repos?page=${page}&per_page=100`;
+            const headers = { 'User-Agent': 'Node.js' };
+            if (process.env.GITHUB_TOKEN) {
+                headers['Authorization'] = `token ${process.env.GITHUB_TOKEN}`;
+            }
             try {
                 const res = await new Promise((res, rej) => {
-                    https.get(url, { headers: { 'User-Agent': 'Node.js' } }, (response) => {
+                    https.get(url, { headers }, (response) => {
                         let data = '';
                         response.on('data', (chunk) => data += chunk);
                         response.on('end', () => {

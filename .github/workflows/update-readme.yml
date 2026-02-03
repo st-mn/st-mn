@@ -1,8 +1,6 @@
 name: Update README
 
 on:
-  schedule:
-    - cron: '0 0 * * *'  # Daily at midnight
   workflow_dispatch:  # Allow manual trigger
 
 jobs:
@@ -20,6 +18,8 @@ jobs:
           node-version: '18'
 
       - name: Update README
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: node update_readme.js
 
       - name: Commit changes
